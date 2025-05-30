@@ -1,0 +1,36 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import {Greet} from './components/Greet' 
+import Welcome from './components/Welcome'
+import ReactCreate from './components/ReactCreate'
+import Props from './components/Props'
+import Message from './Message'
+import Counter from './components/Counter'
+
+function App() {
+  const [count, setCount] = useState(0)
+  
+  return (
+    <div>
+        <button onClick={() => setCount((count) =>count= count + 1)}>
+          count is {count}
+        </button>
+        <Greet/>
+        <Welcome name="Omprasad 333 " >
+        <h1> Welcome children </h1>
+        </Welcome>
+        <ReactCreate/>
+        <Props name="Omprasad">
+
+          <h1>Hello children of prop </h1>
+        </Props>
+        <Message/>
+        <Counter/>
+
+    </div>
+  )
+}
+
+export default App
