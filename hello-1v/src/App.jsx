@@ -8,10 +8,11 @@ import ReactCreate from './components/ReactCreate'
 import Props from './components/Props'
 import Message from './Message'
 import Counter from './components/Counter'
+import DesProp from './components/DesProp'
+import Events from './components/Event'
 
 function App() {
   const [count, setCount] = useState(0)
-  
   return (
     <div>
         <button onClick={() => setCount((count) =>count= count + 1)}>
@@ -28,6 +29,8 @@ function App() {
         </Props>
         <Message/>
         <Counter/>
+        <DesProp name="Omprasad B L" age={25}  />
+        <Events/>
 
     </div>
   )

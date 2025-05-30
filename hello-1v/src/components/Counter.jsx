@@ -10,7 +10,7 @@ class Counter extends Component {
   }
 
   increment() {
-    // appraoch
+    // appraoch  which fail to notice modification
     // this.state.count=this.state.count+1;
 
     // approach
@@ -19,12 +19,9 @@ class Counter extends Component {
     // })
 
     // approach
-    this.setState(
-      (prev) => ({
-        count:prev.count+1
-      })
-    );
-    console.log(this.state.count);
+    this.setState((prev) => ({
+      count: prev.count + 1,
+    }));
   }
 
   render() {

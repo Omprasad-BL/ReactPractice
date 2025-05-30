@@ -15,6 +15,10 @@ class Welcome extends Component {
     // this.setState((prev) => (prev.message = "thank you for subscribe "));
   }
   render() {
+    // here we can destructure 
+    // const {name,age}=this.props;
+    // here we can destructure state
+    // const {counter,msg}=this.state;
     return (
       <>
         <h1 style={{ color: "red " }}>
