@@ -10,6 +10,10 @@ import Message from './Message'
 import Counter from './components/Counter'
 import DesProp from './components/DesProp'
 import Events from './components/Event'
+import Events2 from './components/Events2'
+import FuncitonClick from './components/FuncitonClick'
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,7 +35,12 @@ function App() {
         <Counter/>
         <DesProp name="Omprasad B L" age={25}  />
         <Events/>
+        <Events2/>
 
+        <FuncitonClick/>
+        <ClassClick/>
+
+        <EventBind/>
     </div>
   )
 }
