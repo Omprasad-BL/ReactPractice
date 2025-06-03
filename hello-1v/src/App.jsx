@@ -14,6 +14,7 @@ import Events2 from './components/Events2'
 import FuncitonClick from './components/FuncitonClick'
 import ClassClick from './components/ClassClick'
 import EventBind from './components/EventBind'
+import ParentComp from './components/ParentComp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +42,7 @@ function App() {
         <ClassClick/>
 
         <EventBind/>
+        <ParentComp/>
     </div>
   )
 }
