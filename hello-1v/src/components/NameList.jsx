@@ -12,7 +12,9 @@ function NameList() {
       skill: "Massage",
     },
   ];
- const personList=persons.map(person=> <Person person={person}/>)
+ const personList=persons.map(person=>
+  // if key same react through error beacause of react terms to handle items properly
+  <Person key={person.id}  person={person}/>)
  return <ol >{personList}</ol>;
 }
 export default NameList;
