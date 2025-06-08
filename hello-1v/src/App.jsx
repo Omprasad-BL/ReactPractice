@@ -17,6 +17,8 @@ import EventBind from './components/EventBind'
 import ParentComp from './components/ParentComp'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import StyleSheet from './components/StyleSheet'
+import Internal from './components/Internal'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -47,6 +49,10 @@ function App() {
         <ParentComp/>
         <UserGreeting/>
         <NameList/>
+        {/* make it true to add styles */}
+        <StyleSheet primary={true}/>
+        {/* if you want add styles to perticular component then use style attribute */}
+        <Internal/>
     </div>
   )
 }
